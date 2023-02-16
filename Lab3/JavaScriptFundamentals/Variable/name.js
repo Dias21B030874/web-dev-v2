@@ -1,0 +1,1 @@
+let ourPlanetName = "Earth";
