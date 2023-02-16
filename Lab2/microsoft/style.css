@@ -1,0 +1,251 @@
+body {
+    font-size: 13px;
+    font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000;
+    background-color: #fff;
+}
+
+.container {
+    margin-right: 500px;
+    height: 630px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    margin-left: 50px;
+}
+
+.logo a {
+    font-size: 10px;
+}
+
+.head {
+    margin-top: 15px;
+    display: flex;
+}
+
+.head a {
+    color: #000;
+}
+
+.head .head_left a:hover,
+.head .head_right_3 a:hover,
+.head .head_right_1 a:hover {
+    border-bottom: 2.5px solid #000;
+}
+
+.head_left {
+    padding-top: 6px;
+    padding-left: 30px;
+}
+
+.head_right_1 {
+    padding-top: 6px;
+    padding-left: 470px;
+}
+
+.head_right_2 {
+    padding-left: 140px;
+    margin-top: -16px;
+}
+
+.head_right_3,
+.head_right_5 {
+    padding-top: 6px;
+    padding-left: 10px;
+}
+
+.head_right_4 {
+    padding-left: 45px;
+    margin-top: -18px;
+}
+
+.head_right_6 {
+    padding-left: 45px;
+    margin-top: -20px;
+}
+
+.btn-1 {
+    background-color: #fff;
+    border: none;
+}
+
+.btn,
+.btn-2 {
+    position: relative;
+    top: 50px;
+    right: 100px;
+}
+
+.container .logo {
+    padding-top: 20px;
+    position: relative;
+}
+
+.logo-text {
+    position: relative;
+    bottom: 400px;
+    left: 250px;
+    width: 500px;
+}
+
+.logo-text_2 {
+    font-family: bold;
+    font-size: 23px;
+    position: relative;
+    bottom: 75px;
+    left: 50px;
+}
+
+.big {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.main-sentence_1 {
+    position: relative;
+    top: 50px;
+    left: -100px;
+    font-size: 15px;
+}
+
+.main-sentence_2 {
+    position: relative;
+    top: 100px;
+    left: -100px;
+    font-size: 15px;
+}
+
+.logo-text .btn {
+    line-height: 32px;
+    width: 160px;
+    border-radius: 0px;
+    border-color: black;
+    background-color: black;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.logo-text .btn-2 {
+    margin-left: 20px;
+    line-height: 32px;
+    width: 160px;
+    border-radius: 1px;
+    border-color: transparent;
+    background-color: transparent;
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.logo-text .btn a:hover {
+    border-bottom: 2.5px solid #fff;
+}
+
+.logo-text .btn a {
+    color: #fff;
+}
+
+.logo-text .btn-2 a:hover {
+    border-bottom: 2.5px solid black;
+}
+
+.logo-text .btn-2 a {
+    color: black;
+}
+
+.container_below {
+    margin-top: -90px;
+    margin-bottom: -50px;
+    display: flex;
+    flex-direction: row;
+    padding-top: -100px;
+    width: 300px;
+}
+
+.img_prd {
+    padding-left: 24px;
+}
+
+.text-underlogo .prd-title {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.text-underlogo .prd-stc {
+    font-size: 15px;
+}
+
+.text-underlogo a {
+    font-size: 15px;
+    color: rgb(7, 128, 226);
+    font-weight: 600;
+}
+
+.text-underlogo a:hover {
+    border-bottom: 2.5px solid rgb(7, 128, 226);
+}
+
+.text-underlogo strong {
+    color: rgb(7, 128, 226);
+}
+
+.logo-text-2 {
+    position: relative;
+    bottom: 250px;
+    left: 250px;
+    width: 500px;
+}
+
+.btn_below {
+    position: relative;
+    top: 100px;
+    left: -100px;
+    line-height: 32px;
+    width: 120px;
+    border-radius: 0px;
+    border-color: black;
+    background-color: black;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.logo-text .btn_below a:hover {
+    border-bottom: 2.5px solid #fff;
+}
+
+.logo-text .btn_below a {
+    color: #fff;
+}
+
+.texxt {
+    position: relative;
+    top: 40px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.prd-stc {
+    margin: 5px;
+}
+
+.caption-1 {
+    font-style: bold;
+    font-size: 32px;
+    position: relative;
+    left: -100px;
+    top: 50px;
+}
+
+.caption-2 {
+    font-style: bold;
+    font-size: 32px;
+    position: relative;
+    left: -100px;
+    top: 90px;
+}
