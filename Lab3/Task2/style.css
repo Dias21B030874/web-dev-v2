@@ -1,0 +1,116 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont;
+    background-color: #f0f2f5;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 4vw;
+    background-color: #1a1a2e;
+    padding: 0px 70px;
+    margin: auto;
+    color: #f0f2f5;
+    font-size: 25px;
+}
+
+
+.container {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.under-container {
+    width: 95vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.add_button {
+    cursor: pointer;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    background-color: #0f3460;
+    border: 1px #0b0a14 solid;
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin-left: 2vw;
+}
+
+.add_button:hover {
+    background-color: #1a1a2e;
+}
+
+.new_task {
+    font-size: 15px;
+    flex-basis: 50%;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    border: 1px #0f3460 solid;
+    border-radius: 5px;
+}
+
+.new_task:focus {
+    outline: none;
+}
+
+.title {
+    color: #0f3460;
+    font-stretch: expanded;
+    font-weight: bold;
+    font-size: 35px;
+    padding-left: 250px;
+}
+
+.tasks {
+    margin-top: 30px;
+    width: 75%;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+}
+
+.task-item {
+    font-size: 15px;
+    align-items: center;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    height: 3vw;
+    padding: 10px;
+    border: rgb(170, 163, 163) 1px solid;
+    border-radius: 5px;
+    background-color: #f0f2f5;
+}
+
+.task-item input {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.task-item span {
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow-wrap: break-word;
+}
+
+
+.bin-img {
+    flex-shrink: 0;
+    cursor: pointer;
+    height: 20px;
+}
+
+.task-item.done {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.task-item.undone {
+    text-decoration: none;
+}
