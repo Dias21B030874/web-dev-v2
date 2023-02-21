@@ -1,0 +1,57 @@
+
+.slide-container {
+    padding: 20px;
+    max-width: 370px;
+    position: relative;
+    margin: auto;
+  } 
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+  }
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    margin: 0 2px;
+    display: inline-block;
+    background-color: #bbb;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active .dot:hover {
+    background-color: #717171;
+  }
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from{opacity: .4}
+    to{opacity: 1}
+  }
+  @keyframes fade {
+    from{opacity: .4}
+    to{opacity: 1}
+  
+  }
+  
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/

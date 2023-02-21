@@ -1,0 +1,39 @@
+<h2>Products</h2>
+<div class="product-list">
+  <div *ngFor="let product of products" class="product-list-item">
+    <h3>
+      <a [title]="product.name + ' details'" href="{{product.prodLink}}">
+        {{ product.name }}
+      </a>
+    </h3>
+    <div class="slide-container">
+      <div class="slides fade" *ngFor="let image of product.images">
+        <img src="{{image}}" width="200px">
+      </div>
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+    </div>
+    <div style="text-align: center">
+      <span *ngFor="let image of product.images; let i = index;" class="dot"></span>
+    </div>
+    <p *ngIf="product.description">
+      Description: {{ product.description }}
+    </p>
+    <p *ngIf="product.price">
+      Price: ${{product.price}}
+    </p>
+    <p *ngIf="product.rating">
+      Rating: {{product.rating}}
+    </p>
+    <p>
+
+    </p>
+    <button type="button" (click)="share(product)">
+      Share
+    </button>
+    <app-product-alerts
+      [product]="product"
+      (notify)="onNotify()">
+    </app-product-alerts>
+  </div>
+</div>
