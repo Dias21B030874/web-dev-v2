@@ -1,0 +1,12 @@
+:host {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 50px 90px;
+}
+  
+:host::after {
+    content: "";
+    flex: auto;
+}

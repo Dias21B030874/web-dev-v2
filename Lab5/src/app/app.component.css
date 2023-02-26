@@ -1,0 +1,20 @@
+header {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    background: #0d5ae3;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+h1 {
+  color: white;
+  margin: 8px 0;
+}
+
+.category {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}

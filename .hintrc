@@ -4,6 +4,18 @@
   ],
   "hints": {
     "meta-viewport": "off",
-    "button-type": "off"
+    "button-type": "off",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "image-alt": "off"
+      }
+    ],
+    "axe/forms": [
+      "default",
+      {
+        "select-name": "off"
+      }
+    ]
   }
 }

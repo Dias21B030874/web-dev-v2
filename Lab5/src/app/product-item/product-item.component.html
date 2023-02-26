@@ -1,0 +1,51 @@
+<img [src]="item.imageLink" [alt]="item.name">
+
+<a [href]="item.link">{{item.name}}</a>
+<p>{{item.description}}</p>
+
+<div>
+  <span class="material-icons"
+    *ngFor="let i of [].constructor(getRating())"
+    [title]="'Rating ' + item.rating">Rating: {{item.rating}}</span>
+</div>
+
+  <div *ngIf="item.check==false" class="rating-buttons">
+    <button (click)="addRaiting1()">
+      1
+    </button>
+  </div>
+
+  <div *ngIf="item.check==false" class="rating-buttons">
+    <button (click)="addRaiting2()">
+      2
+    </button>
+  </div>
+
+  <div *ngIf="item.check==false" class="rating-buttons">
+    <button (click)="addRaiting3()">
+      3
+    </button>
+  </div>
+
+  <div *ngIf="item.check==false"  class="rating-buttons">
+    <button (click)="addRaiting4()">
+      4
+    </button>
+  </div>
+
+  <div *ngIf="item.check==false"  class="rating-buttons">
+    <button (click)="addRaiting5()">
+      5
+    </button>
+  </div>
+
+<a target="__blank"
+  class="share-btn material-icons"
+  [href]="getShareLink()"
+  title="Telegram share link">share</a>
+
+<button class="remove-btn"
+  (click)="removeItem()">Remove</button>
+<button class="like-btn"
+  (click)="addLike()">{{item.likes}} likes
+</button>
