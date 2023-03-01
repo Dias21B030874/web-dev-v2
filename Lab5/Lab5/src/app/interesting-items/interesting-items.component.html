@@ -1,0 +1,18 @@
+<div *ngFor="let product of products | async">
+  <ng-container *ngIf="SelectedCategory.indexOf(product.category, 0)!=-1">
+    <h3>
+      <a [title]="product.name + ' detail'"
+          [routerLink]="['/products', product.id]">
+      {{ product.name }}
+      </a>
+    </h3>
+
+    <p *ngIf = "product.description">
+      Description: {{product.description}}
+    </p>
+    <p>
+      Category: {{product.category}}
+    </p>
+    <button (click)=(delete(products,product))>-</button>
+  </ng-container>
+</div>

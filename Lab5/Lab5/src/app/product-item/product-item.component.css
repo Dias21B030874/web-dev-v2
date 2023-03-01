@@ -1,0 +1,14 @@
+.share_butt {
+  width: fit-content;
+  height: fit-content;
+  margin-left: 10px;
+}
+
+.upper_block{
+  width: inherit;
+  display: flex;
+}
+
+.upper_block h4{
+  margin: 0 0 0 0;
+}

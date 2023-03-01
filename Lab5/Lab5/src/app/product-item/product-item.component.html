@@ -1,0 +1,23 @@
+<h3>Amazon</h3>
+
+<div class="amazon-item" *ngFor="let item of items | async">
+  
+  <a href={{item.url}} target="_blank"><h4>{{ item.name }}</h4></a>
+
+  <div class="gallery"><img src={{item.image1}}>
+    <img src={{item.image2}}>
+    <img src={{item.image3}}>
+  </div>
+
+  <p>{{item.description}}</p> 
+  <p>Rating: {{item.rating}}</p>
+  <h5 style="float: right">{{item.price | currency}}</h5>
+
+  <button type="button" (click)="addToCart(item)" class="share_butt">Buy</button>
+  <br>
+  <div class="upper_block">
+    <button type="button" (click)="share_wt(item.url)" class="share_butt">Whatsapp</button>
+    <button type="button" (click)="share_tg(item.url)" class="share_butt">Telegram</button>
+  </div>
+
+</div>
