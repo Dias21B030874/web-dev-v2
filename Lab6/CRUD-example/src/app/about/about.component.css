@@ -1,0 +1,35 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: rgb(255, 6, 6);
+    border-bottom: solid 1px white;
+}
+
+h1 {
+    margin: 1px;
+    padding: 1rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    margin-left: 10rem;
+    column-gap: 100%;
+    list-style-type: none;
+    font-weight: 900;
+}
+
+li{
+    text-decoration: none;
+    color: black;
+}
+
+li:hover {
+    color: darkred;
+    cursor: pointer;
+}

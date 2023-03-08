@@ -1,0 +1,23 @@
+<header>
+    <h1>Album №{{album.id}}</h1>
+    <div>
+        <ul>
+            <li routerLink=""> Home </li>
+            <li routerLink="/about"> About </li>
+            <li routerLink="/albums"> Albums </li>
+        </ul>
+    </div>
+</header>
+
+<div class="input">
+    <input type="text" placeholder="Change title" #newTitle>
+    <button (click)="changeTitle(newTitle)">Save</button>
+  </div>
+
+
+<div class="album">
+    <p><strong>ID: </strong>{{album.id}}</p>
+    <p><strong>TITLE: </strong>{{album.title}}</p>
+    <button routerLink="/albums/{{album.id}}/photos">Photos</button> 
+    <button routerLink="/albums">Return back</button> 
+</div>

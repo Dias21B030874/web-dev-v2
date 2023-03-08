@@ -1,0 +1,62 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: bisque;
+    border-bottom: solid 1px black;
+}
+
+h1 {
+    margin: 0px;
+    padding: 1rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    margin-left: 10rem;
+    column-gap: 100%;
+    list-style-type: none;
+    font-weight: 900;
+}
+
+li{
+    text-decoration: none;
+    color: black;
+}
+
+li:hover {
+    color: darkred;
+    cursor: pointer;
+}
+
+.album {
+    margin: 0 1rem;
+}
+
+button {
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+button:hover {
+    background-color: rgb(211, 211, 211);
+    cursor: pointer;
+}
+
+.input {
+    margin: 1rem 1rem;
+}
+
+.input input {
+    margin-right: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    border-width: 1px;
+}

@@ -1,0 +1,6 @@
+body {
+    margin: 0px;
+    padding: 72px 0 0 0; /* bad */
+    box-sizing: border-box;
+    background-color: rgb(252, 245, 234);
+}

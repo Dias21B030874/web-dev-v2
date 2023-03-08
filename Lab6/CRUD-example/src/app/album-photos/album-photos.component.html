@@ -1,0 +1,9 @@
+<button routerLink="/albums/{{id}}">Return back</button>
+
+<div class="grid" *ngFor="let photo of photos">
+    <div class="grid-item">
+        <p><strong>ID: </strong>{{photo.id}}</p>
+        <p><strong>TITLE: </strong>{{photo.title}}</p>
+        <img src="{{photo.url}}">
+    </div>
+</div>

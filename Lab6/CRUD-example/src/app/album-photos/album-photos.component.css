@@ -1,0 +1,30 @@
+.grid {
+    margin: 1rem 1rem;
+}
+
+.grid-item {
+    max-width: 500px;
+}
+
+.grid p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.grid img {
+    width: 200px;
+    height: 200px;
+    margin: 1rem 0;
+}
+
+button {
+    margin: 1rem 1rem 0 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+button:hover {
+    background-color: rgb(211, 211, 211);
+    cursor: pointer;
+}

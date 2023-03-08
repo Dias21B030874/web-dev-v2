@@ -1,0 +1,24 @@
+<header>
+    <h1>Albums Component</h1>
+    <div>
+        <ul>
+            <li routerLink=""> Home </li>
+            <li routerLink="/about"> About </li>
+            <li> Albums </li>
+        </ul>
+    </div>
+</header>
+
+<div class="input">
+  <input type="text" #newAlbum>
+  <button (click)="addPost(newAlbum)">Add post</button>
+</div>
+
+<ul class="album">
+  <li *ngFor="let album of albums; let i=index">
+    <a routerLink="/albums/{{i+1}}">
+      {{album.id}}) {{album.title}}
+    </a>
+    <button (click)="deletePost(i)">Delete album</button>
+  </li>
+</ul>
