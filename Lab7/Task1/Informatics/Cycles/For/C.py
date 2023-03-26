@@ -1,0 +1,1 @@
+print(*filter(lambda i : int(i ** 0.5) ** 2 == i, list(range(int(input()), int(input()) + 1))))
