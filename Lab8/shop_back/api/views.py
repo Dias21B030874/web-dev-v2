@@ -29,3 +29,12 @@ def category_detail(request, category_id):
     except Category.DoesNotExist as exception:
         return JsonResponse({'exception': str(exception)}, status=400)
     return JsonResponse(category.to_json())
+
+def category_products(request, category_id):
+    try:
+        category = Category.objects.get(id=category_id)
+    except Category.DoesNotExist as exception:
+        return JsonResponse({'exception': str(exception)}, status=400)
+    products = Product.objects.filter(category=category)
+    products_json = [product.to_json() for product in products]
+    return JsonResponse(products_json, safe=False)
