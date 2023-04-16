@@ -1,0 +1,14 @@
+<div class="company-list">
+  <ul>
+    <li *ngFor="let company of companies">
+      <div class="company-card">
+        <h2>{{ company.name | uppercase }}<button class="delete-btn" (click)="deleteCategory(company.id)">X</button></h2> 
+        <p>{{ company.description }}</p>
+        <p class="address">Address: {{ company.city }}, {{ company.address }}</p>
+        <div class="btn">
+          <button (click)="viewVacancies(company)">Show vacancies</button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

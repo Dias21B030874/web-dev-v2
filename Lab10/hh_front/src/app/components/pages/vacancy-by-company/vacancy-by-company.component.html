@@ -1,0 +1,9 @@
+<div class="main">
+      <p *ngIf="loading">Loading...</p>
+      <div class="vacancies" *ngIf="vacancies">
+        <h2 *ngFor="let vacancy of vacancies">
+          <h2>{{ vacancy.name }}</h2>
+          <p>Salary: {{ vacancy.salary }}</p>
+          <p>Description: {{ vacancy.description }}</p></h2>
+  </div>
+</div>

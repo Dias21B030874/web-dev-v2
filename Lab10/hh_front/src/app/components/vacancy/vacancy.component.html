@@ -1,0 +1,13 @@
+<div id="vacancies">
+  <h1>Vacancies</h1>
+  <p *ngIf="loading">Loading...</p>
+  <ul>
+    <li *ngFor="let vacancy of vacancies">
+      <h2>{{ vacancy.name }}</h2>
+      <p>Salary: {{ vacancy.salary }}</p>
+      <div class="btn">
+        <button (click)="viewDetails(vacancy)">View Details</button>
+      </div>
+    </li>
+  </ul>
+</div>
